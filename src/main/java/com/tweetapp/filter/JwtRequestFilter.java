@@ -1,4 +1,4 @@
-package com.tweetapp.kafka;
+package com.tweetapp.filter;
 
 import com.tweetapp.service.UserService;
 import com.tweetapp.util.JwtUtil;

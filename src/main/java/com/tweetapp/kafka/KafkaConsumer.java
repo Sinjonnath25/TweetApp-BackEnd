@@ -1,4 +1,4 @@
-package com.tweetapp.handler;
+package com.tweetapp.kafka;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

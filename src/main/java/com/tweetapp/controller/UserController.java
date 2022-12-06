@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tweetapp.exception.TweetAppException;
-import com.tweetapp.handler.KafkaProducer;
+import com.tweetapp.kafka.KafkaProducer;
 import com.tweetapp.model.User;
 import com.tweetapp.model.utilityModel.ApiResponse;
 import com.tweetapp.model.utilityModel.ChangePassword;
