@@ -1,0 +1,459 @@
+2022-12-06 00:16:36.972  INFO 10088 --- [restartedMain] com.tweetapp.TweetappApplication         : Starting TweetappApplication using Java 15.0.2 on DESKTOP-69PTINL with PID 10088 (D:\A\Ma\TweetApp-BackEnd\target\classes started by USER in D:\A\Ma\TweetApp-BackEnd)
+2022-12-06 00:16:36.978  INFO 10088 --- [restartedMain] com.tweetapp.TweetappApplication         : No active profile set, falling back to default profiles: default
+2022-12-06 00:16:37.082  INFO 10088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-06 00:16:37.083  INFO 10088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-06 00:16:38.614  INFO 10088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-12-06 00:16:38.616  INFO 10088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 00:16:38.783  INFO 10088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 4 JPA repository interfaces.
+2022-12-06 00:16:39.423  INFO 10088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-12-06 00:16:39.424  INFO 10088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 00:16:39.442  INFO 10088 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.CommentRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:16:39.444  INFO 10088 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.LikeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:16:39.445  INFO 10088 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.TweetRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:16:39.447  INFO 10088 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.UsersRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:16:39.448  INFO 10088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2022-12-06 00:16:40.923  INFO 10088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 00:16:40.948  INFO 10088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 00:16:40.949  INFO 10088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-06 00:16:41.164  INFO 10088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-06 00:16:41.165  INFO 10088 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4080 ms
+2022-12-06 00:16:41.822  INFO 10088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 00:16:41.932  INFO 10088 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-12-06 00:16:42.213  INFO 10088 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-06 00:16:42.411  INFO 10088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-06 00:16:43.029  INFO 10088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-06 00:16:43.076  INFO 10088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-06 00:16:44.557  INFO 10088 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 00:16:44.572  INFO 10088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 00:16:45.260  WARN 10088 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 00:16:45.442  INFO 10088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 00:16:46.186 DEBUG 10088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2022-12-06 00:16:46.348  INFO 10088 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-06 00:16:46.795 DEBUG 10088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-06 00:16:46.823  INFO 10088 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7617f98d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d902c36, org.springframework.security.web.header.HeaderWriterFilter@7cfa583a, org.springframework.web.filter.CorsFilter@5e903f8b, org.springframework.security.web.authentication.logout.LogoutFilter@58368ee4, com.tweetapp.filters.JwtRequestFilter@195d15d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2391de52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55f25e16, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7703ede1, org.springframework.security.web.session.SessionManagementFilter@2e02608a, org.springframework.security.web.access.ExceptionTranslationFilter@19050205, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@248b167d]
+2022-12-06 00:16:46.958 DEBUG 10088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 00:16:47.043 DEBUG 10088 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 00:16:47.673  INFO 10088 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-12-06 00:16:47.937  INFO 10088 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.2
+2022-12-06 00:16:47.938  INFO 10088 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: da65af02e5856e34
+2022-12-06 00:16:47.938  INFO 10088 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1670266007935
+2022-12-06 00:16:47.976  INFO 10088 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Subscribed to topic(s): PasswordChangeTopic
+2022-12-06 00:16:48.020  INFO 10088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 00:16:48.022  INFO 10088 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-06 00:16:48.064  INFO 10088 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-06 00:16:48.086  INFO 10088 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-06 00:16:48.525  INFO 10088 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-12-06 00:16:48.535  INFO 10088 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-12-06 00:16:48.650  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Cluster ID: CDOpTBxdSnKEkH2Vxmd96w
+2022-12-06 00:16:48.653  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Discovered group coordinator DESKTOP-69PTINL:9092 (id: 2147483647 rack: null)
+2022-12-06 00:16:48.658  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] (Re-)joining group
+2022-12-06 00:16:48.684  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] (Re-)joining group
+2022-12-06 00:16:48.689  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Successfully joined group with generation Generation{generationId=33, memberId='consumer-twitter-group-1-d1c9e6a7-8678-44b4-bd62-587dc9c2dd33', protocol='range'}
+2022-12-06 00:16:48.693  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Finished assignment for group at generation 33: {consumer-twitter-group-1-d1c9e6a7-8678-44b4-bd62-587dc9c2dd33=Assignment(partitions=[PasswordChangeTopic-0])}
+2022-12-06 00:16:48.701  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Successfully synced group in generation Generation{generationId=33, memberId='consumer-twitter-group-1-d1c9e6a7-8678-44b4-bd62-587dc9c2dd33', protocol='range'}
+2022-12-06 00:16:48.702  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Notifying assignor about the new Assignment(partitions=[PasswordChangeTopic-0])
+2022-12-06 00:16:48.709  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Adding newly assigned partitions: PasswordChangeTopic-0
+2022-12-06 00:16:48.729  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Setting offset for partition PasswordChangeTopic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-69PTINL:9092 (id: 0 rack: null)], epoch=0}}
+2022-12-06 00:16:48.732  INFO 10088 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : twitter-group: partitions assigned: [PasswordChangeTopic-0]
+2022-12-06 00:16:48.739  INFO 10088 --- [restartedMain] com.tweetapp.TweetappApplication         : Started TweetappApplication in 12.419 seconds (JVM running for 13.274)
+2022-12-06 00:16:59.056  INFO 10088 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-06 00:16:59.058  INFO 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-06 00:16:59.059 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-06 00:16:59.059 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-06 00:16:59.059 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-06 00:16:59.065 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@17600ed5
+2022-12-06 00:16:59.068 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3d62edc1
+2022-12-06 00:16:59.068 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-06 00:16:59.069  INFO 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2022-12-06 00:16:59.140 DEBUG 10088 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tweetapp.controller.UserController#loginUser(LoginModel)
+2022-12-06 00:16:59.174 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1.0/tweets/login", parameters={}
+2022-12-06 00:16:59.183 DEBUG 10088 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tweetapp.controller.UserController#loginUser(LoginModel)
+2022-12-06 00:16:59.382 DEBUG 10088 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginModel(userId=sn, password=1234, jwt=null)]
+2022-12-06 00:16:59.399  INFO 10088 --- [http-nio-8080-exec-2] com.tweetapp.controller.UserController   : Entered loginUser
+2022-12-06 00:16:59.400  INFO 10088 --- [http-nio-8080-exec-2] com.tweetapp.service.UserService         : Entered login
+2022-12-06 00:16:59.688  INFO 10088 --- [http-nio-8080-exec-2] com.tweetapp.service.UserService         : User Found to login
+2022-12-06 00:16:59.689  INFO 10088 --- [http-nio-8080-exec-2] com.tweetapp.service.UserService         : User(id=2, email=sinjon25@gmail.com, username=sn, firstName=Sinjon, lastName=Nath, password=$2a$10$TbqeQcFMQc0TX4pLghFekuzqZR96YfQRfags/nx8CRnZA65IHMxNi, contactNumber=8013896502, dob=1998-04-22, gender=M)
+2022-12-06 00:16:59.862  INFO 10088 --- [http-nio-8080-exec-2] com.tweetapp.service.UserService         : Enterted loadUserByUsername
+2022-12-06 00:16:59.997  INFO 10088 --- [http-nio-8080-exec-2] com.tweetapp.service.UserService         : Login Successful, usersn ,jwt:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzbiIsImV4cCI6MTY3MDMwMjAxOSwiaWF0IjoxNjcwMjY2MDE5fQ.TS95uH7CbWYTg6tQXGhn9Tsz9h8ka0Op7qeeZ2RPSA0
+2022-12-06 00:16:59.997  INFO 10088 --- [http-nio-8080-exec-2] com.tweetapp.controller.UserController   : Token generated:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzbiIsImV4cCI6MTY3MDMwMjAxOSwiaWF0IjoxNjcwMjY2MDE5fQ.TS95uH7CbWYTg6tQXGhn9Tsz9h8ka0Op7qeeZ2RPSA0
+2022-12-06 00:16:59.997  INFO 10088 --- [http-nio-8080-exec-2] com.tweetapp.controller.UserController   : User Logged in successfully
+2022-12-06 00:17:00.023 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-06 00:17:00.024 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(status=200, message=Login successful, data={jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzbiIsImV (truncated)...]
+2022-12-06 00:17:00.047 DEBUG 10088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-06 00:17:25.926 DEBUG 10088 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tweetapp.controller.TweetController#getAllTweets()
+2022-12-06 00:17:25.990  INFO 10088 --- [http-nio-8080-exec-4] com.tweetapp.service.UserService         : Enterted loadUserByUsername
+2022-12-06 00:17:26.104 DEBUG 10088 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1.0/tweets/all", parameters={}
+2022-12-06 00:17:26.106 DEBUG 10088 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tweetapp.controller.TweetController#getAllTweets()
+2022-12-06 00:17:26.108  INFO 10088 --- [http-nio-8080-exec-4] com.tweetapp.controller.TweetController  : Entered getAllTweets
+2022-12-06 00:17:26.255  INFO 10088 --- [http-nio-8080-exec-4] com.tweetapp.controller.TweetController  : Tweets Fetched successfully
+2022-12-06 00:17:26.256 DEBUG 10088 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-06 00:17:26.258 DEBUG 10088 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(status=200, message=Tweets Fetched successfully, data=[TweetWithLikeComment(id=4, userNa (truncated)...]
+2022-12-06 00:17:26.275 DEBUG 10088 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-06 00:18:51.317  INFO 8496 --- [restartedMain] com.tweetapp.TweetappApplication         : Starting TweetappApplication using Java 15.0.2 on DESKTOP-69PTINL with PID 8496 (D:\A\Ma\TweetApp-BackEnd\target\classes started by USER in D:\A\Ma\TweetApp-BackEnd)
+2022-12-06 00:18:51.322  INFO 8496 --- [restartedMain] com.tweetapp.TweetappApplication         : No active profile set, falling back to default profiles: default
+2022-12-06 00:18:51.420  INFO 8496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-06 00:18:51.421  INFO 8496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-06 00:18:52.711  INFO 8496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-12-06 00:18:52.712  INFO 8496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 00:18:52.805  INFO 8496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 4 JPA repository interfaces.
+2022-12-06 00:18:53.300  INFO 8496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-12-06 00:18:53.301  INFO 8496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 00:18:53.314  INFO 8496 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.CommentRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:18:53.316  INFO 8496 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.LikeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:18:53.317  INFO 8496 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.TweetRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:18:53.319  INFO 8496 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.UsersRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:18:53.320  INFO 8496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2022-12-06 00:18:54.472  INFO 8496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 00:18:54.496  INFO 8496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 00:18:54.496  INFO 8496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-06 00:18:54.698  INFO 8496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-06 00:18:54.699  INFO 8496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3277 ms
+2022-12-06 00:18:55.353  INFO 8496 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 00:18:55.456  INFO 8496 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-12-06 00:18:55.724  INFO 8496 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-06 00:18:55.935  INFO 8496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-06 00:18:56.291  INFO 8496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-06 00:18:56.318  INFO 8496 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-06 00:18:57.613  INFO 8496 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 00:18:57.635  INFO 8496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 00:18:58.393  WARN 8496 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 00:18:58.577  INFO 8496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 00:18:59.333 DEBUG 8496 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2022-12-06 00:18:59.498  INFO 8496 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-06 00:18:59.988 DEBUG 8496 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-06 00:19:00.021  INFO 8496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79c7cd24, org.springframework.security.web.context.SecurityContextPersistenceFilter@55d7a839, org.springframework.security.web.header.HeaderWriterFilter@3de97a80, org.springframework.web.filter.CorsFilter@6bc2d61f, org.springframework.security.web.authentication.logout.LogoutFilter@566e65e9, com.tweetapp.kafka.JwtRequestFilter@5f83444b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45802e47, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d902c36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@248b167d, org.springframework.security.web.session.SessionManagementFilter@2ba23c38, org.springframework.security.web.access.ExceptionTranslationFilter@372ba851, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@474076d1]
+2022-12-06 00:19:00.148 DEBUG 8496 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 00:19:00.223 DEBUG 8496 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 00:19:00.750  INFO 8496 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-12-06 00:19:01.014  INFO 8496 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.2
+2022-12-06 00:19:01.015  INFO 8496 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: da65af02e5856e34
+2022-12-06 00:19:01.015  INFO 8496 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1670266141012
+2022-12-06 00:19:01.063  INFO 8496 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Subscribed to topic(s): PasswordChangeTopic
+2022-12-06 00:19:01.101  INFO 8496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 00:19:01.102  INFO 8496 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-06 00:19:01.146  INFO 8496 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-06 00:19:01.170  INFO 8496 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-06 00:19:01.599  INFO 8496 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-12-06 00:19:01.608  INFO 8496 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-12-06 00:19:01.745  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Cluster ID: CDOpTBxdSnKEkH2Vxmd96w
+2022-12-06 00:19:01.748  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Discovered group coordinator DESKTOP-69PTINL:9092 (id: 2147483647 rack: null)
+2022-12-06 00:19:01.753  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] (Re-)joining group
+2022-12-06 00:19:01.788  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] (Re-)joining group
+2022-12-06 00:19:01.792  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Successfully joined group with generation Generation{generationId=35, memberId='consumer-twitter-group-1-a95e16c1-9e5e-4cbc-a4ae-d7e85cfe10d4', protocol='range'}
+2022-12-06 00:19:01.796  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Finished assignment for group at generation 35: {consumer-twitter-group-1-a95e16c1-9e5e-4cbc-a4ae-d7e85cfe10d4=Assignment(partitions=[PasswordChangeTopic-0])}
+2022-12-06 00:19:01.805  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Successfully synced group in generation Generation{generationId=35, memberId='consumer-twitter-group-1-a95e16c1-9e5e-4cbc-a4ae-d7e85cfe10d4', protocol='range'}
+2022-12-06 00:19:01.806  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Notifying assignor about the new Assignment(partitions=[PasswordChangeTopic-0])
+2022-12-06 00:19:01.814  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Adding newly assigned partitions: PasswordChangeTopic-0
+2022-12-06 00:19:01.816  INFO 8496 --- [restartedMain] com.tweetapp.TweetappApplication         : Started TweetappApplication in 11.165 seconds (JVM running for 12.013)
+2022-12-06 00:19:01.835  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Setting offset for partition PasswordChangeTopic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-69PTINL:9092 (id: 0 rack: null)], epoch=0}}
+2022-12-06 00:19:01.838  INFO 8496 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : twitter-group: partitions assigned: [PasswordChangeTopic-0]
+2022-12-06 00:19:13.280  INFO 8496 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-06 00:19:13.282  INFO 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-06 00:19:13.283 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-06 00:19:13.283 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-06 00:19:13.284 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-06 00:19:13.288 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@32ad96c5
+2022-12-06 00:19:13.289 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2e33dba6
+2022-12-06 00:19:13.289 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-06 00:19:13.290  INFO 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-12-06 00:19:13.340 DEBUG 8496 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tweetapp.controller.TweetController#getAllTweetsForAUser(String)
+2022-12-06 00:19:13.470  INFO 8496 --- [http-nio-8080-exec-2] com.tweetapp.service.UserService         : Enterted loadUserByUsername
+2022-12-06 00:19:13.831 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1.0/tweets/sn", parameters={}
+2022-12-06 00:19:13.836 DEBUG 8496 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tweetapp.controller.TweetController#getAllTweetsForAUser(String)
+2022-12-06 00:19:13.881  INFO 8496 --- [http-nio-8080-exec-2] com.tweetapp.controller.TweetController  : Entered getAllTweetsForAUser
+2022-12-06 00:19:13.937  INFO 8496 --- [http-nio-8080-exec-2] com.tweetapp.controller.TweetController  : Tweets Fetched successfully for user sn
+2022-12-06 00:19:13.978 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-06 00:19:13.981 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(status=200, message=Tweets Fetched successfully for user sn, data=[TweetWithLikeComment( (truncated)...]
+2022-12-06 00:19:14.036 DEBUG 8496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-06 00:20:47.748 DEBUG 8496 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tweetapp.controller.UserController#loginUser(LoginModel)
+2022-12-06 00:20:47.751 DEBUG 8496 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/v1.0/tweets/login", parameters={}
+2022-12-06 00:20:47.752 DEBUG 8496 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tweetapp.controller.UserController#loginUser(LoginModel)
+2022-12-06 00:20:47.786 DEBUG 8496 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginModel(userId=sn, password=1234, jwt=null)]
+2022-12-06 00:20:47.790  INFO 8496 --- [http-nio-8080-exec-5] com.tweetapp.controller.UserController   : Entered loginUser
+2022-12-06 00:20:47.791  INFO 8496 --- [http-nio-8080-exec-5] com.tweetapp.service.UserService         : Entered login
+2022-12-06 00:20:47.794  INFO 8496 --- [http-nio-8080-exec-5] com.tweetapp.service.UserService         : User Found to login
+2022-12-06 00:20:47.794  INFO 8496 --- [http-nio-8080-exec-5] com.tweetapp.service.UserService         : User(id=2, email=sinjon25@gmail.com, username=sn, firstName=Sinjon, lastName=Nath, password=$2a$10$TbqeQcFMQc0TX4pLghFekuzqZR96YfQRfags/nx8CRnZA65IHMxNi, contactNumber=8013896502, dob=1998-04-22, gender=M)
+2022-12-06 00:20:47.973  INFO 8496 --- [http-nio-8080-exec-5] com.tweetapp.service.UserService         : Enterted loadUserByUsername
+2022-12-06 00:20:47.993  INFO 8496 --- [http-nio-8080-exec-5] com.tweetapp.service.UserService         : Login Successful, usersn ,jwt:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzbiIsImV4cCI6MTY3MDMwMjI0NywiaWF0IjoxNjcwMjY2MjQ3fQ.y7I4_r-qeB91EXKPB2HeK42EwBrsEHbdZYoAsGxM17w
+2022-12-06 00:20:47.993  INFO 8496 --- [http-nio-8080-exec-5] com.tweetapp.controller.UserController   : Token generated:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzbiIsImV4cCI6MTY3MDMwMjI0NywiaWF0IjoxNjcwMjY2MjQ3fQ.y7I4_r-qeB91EXKPB2HeK42EwBrsEHbdZYoAsGxM17w
+2022-12-06 00:20:47.993  INFO 8496 --- [http-nio-8080-exec-5] com.tweetapp.controller.UserController   : User Logged in successfully
+2022-12-06 00:20:47.994 DEBUG 8496 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-06 00:20:47.994 DEBUG 8496 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(status=200, message=Login successful, data={jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzbiIsImV (truncated)...]
+2022-12-06 00:20:47.997 DEBUG 8496 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-06 00:28:56.150  INFO 16708 --- [restartedMain] com.tweetapp.TweetappApplication         : Starting TweetappApplication using Java 15.0.2 on DESKTOP-69PTINL with PID 16708 (D:\A\Ma\TweetApp-BackEnd\target\classes started by USER in D:\A\Ma\TweetApp-BackEnd)
+2022-12-06 00:28:56.156  INFO 16708 --- [restartedMain] com.tweetapp.TweetappApplication         : No active profile set, falling back to default profiles: default
+2022-12-06 00:28:56.266  INFO 16708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-06 00:28:56.266  INFO 16708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-06 00:28:57.701  INFO 16708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-12-06 00:28:57.702  INFO 16708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 00:28:57.832  INFO 16708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 4 JPA repository interfaces.
+2022-12-06 00:28:58.290  INFO 16708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-12-06 00:28:58.291  INFO 16708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 00:28:58.305  INFO 16708 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.CommentRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:28:58.306  INFO 16708 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.LikeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:28:58.308  INFO 16708 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.TweetRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:28:58.309  INFO 16708 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tweetapp.repository.UsersRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 00:28:58.310  INFO 16708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2022-12-06 00:28:59.412  INFO 16708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 00:28:59.430  INFO 16708 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 00:28:59.431  INFO 16708 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-06 00:28:59.578  INFO 16708 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-06 00:28:59.579  INFO 16708 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3312 ms
+2022-12-06 00:29:00.106  INFO 16708 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 00:29:00.187  INFO 16708 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-12-06 00:29:00.388  INFO 16708 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-06 00:29:00.532  INFO 16708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-06 00:29:00.869  INFO 16708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-06 00:29:00.922  INFO 16708 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-06 00:29:01.858  INFO 16708 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 00:29:01.876  INFO 16708 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 00:29:02.356  WARN 16708 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 00:29:02.509  INFO 16708 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 00:29:02.999 DEBUG 16708 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2022-12-06 00:29:03.102  INFO 16708 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-06 00:29:03.412 DEBUG 16708 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-06 00:29:03.430  INFO 16708 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d8eca18, org.springframework.security.web.context.SecurityContextPersistenceFilter@1656e5f2, org.springframework.security.web.header.HeaderWriterFilter@62ced551, org.springframework.web.filter.CorsFilter@2dbeaf6a, org.springframework.security.web.authentication.logout.LogoutFilter@2245c611, com.tweetapp.kafka.JwtRequestFilter@3ae24adf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f3725af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ff98e7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@474076d1, org.springframework.security.web.session.SessionManagementFilter@33fb2911, org.springframework.security.web.access.ExceptionTranslationFilter@71309a17, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@515902bc]
+2022-12-06 00:29:03.507 DEBUG 16708 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 00:29:03.563 DEBUG 16708 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 00:29:03.923  INFO 16708 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-12-06 00:29:04.092  INFO 16708 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.2
+2022-12-06 00:29:04.092  INFO 16708 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: da65af02e5856e34
+2022-12-06 00:29:04.093  INFO 16708 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1670266744090
+2022-12-06 00:29:04.130  INFO 16708 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Subscribed to topic(s): PasswordChangeTopic
+2022-12-06 00:29:04.160  INFO 16708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 00:29:04.161  INFO 16708 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-06 00:29:04.188  INFO 16708 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-06 00:29:04.201  INFO 16708 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-06 00:29:04.483  INFO 16708 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-12-06 00:29:04.489  INFO 16708 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-12-06 00:29:04.578  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Cluster ID: CDOpTBxdSnKEkH2Vxmd96w
+2022-12-06 00:29:04.580  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Discovered group coordinator DESKTOP-69PTINL:9092 (id: 2147483647 rack: null)
+2022-12-06 00:29:04.583  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] (Re-)joining group
+2022-12-06 00:29:04.600  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] (Re-)joining group
+2022-12-06 00:29:04.605  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Successfully joined group with generation Generation{generationId=37, memberId='consumer-twitter-group-1-22f9f34b-2ccc-4bb4-b920-e8f9b5cae18e', protocol='range'}
+2022-12-06 00:29:04.609  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Finished assignment for group at generation 37: {consumer-twitter-group-1-22f9f34b-2ccc-4bb4-b920-e8f9b5cae18e=Assignment(partitions=[PasswordChangeTopic-0])}
+2022-12-06 00:29:04.614  INFO 16708 --- [restartedMain] com.tweetapp.TweetappApplication         : Started TweetappApplication in 9.168 seconds (JVM running for 10.084)
+2022-12-06 00:29:04.615  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Successfully synced group in generation Generation{generationId=37, memberId='consumer-twitter-group-1-22f9f34b-2ccc-4bb4-b920-e8f9b5cae18e', protocol='range'}
+2022-12-06 00:29:04.616  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Notifying assignor about the new Assignment(partitions=[PasswordChangeTopic-0])
+2022-12-06 00:29:04.620  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Adding newly assigned partitions: PasswordChangeTopic-0
+2022-12-06 00:29:04.637  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-twitter-group-1, groupId=twitter-group] Setting offset for partition PasswordChangeTopic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-69PTINL:9092 (id: 0 rack: null)], epoch=0}}
+2022-12-06 00:29:04.639  INFO 16708 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : twitter-group: partitions assigned: [PasswordChangeTopic-0]

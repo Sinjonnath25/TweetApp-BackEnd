@@ -22,6 +22,10 @@ import com.tweetapp.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author Sinjon Nath
+ *
+ */
 @RestController
 @Slf4j
 @RequestMapping("/api/v1.0/tweets")

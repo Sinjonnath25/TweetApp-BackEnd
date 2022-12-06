@@ -10,7 +10,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.Data;
-
+/**
+ * @author Sinjon Nath
+ *
+ */
 @Data
 @Entity
 public class User {

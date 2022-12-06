@@ -23,7 +23,10 @@ import com.tweetapp.repository.UsersRepository;
 import com.tweetapp.util.JwtUtil;
 
 import lombok.extern.slf4j.Slf4j;
-
+/**
+ * @author Sinjon Nath
+ *
+ */
 @Service
 @Slf4j
 @Component("userDetailsImpl")

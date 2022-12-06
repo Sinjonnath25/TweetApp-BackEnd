@@ -6,7 +6,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
-
+/**
+ * @author Sinjon Nath
+ *
+ */
 @Repository
 public interface UsersRepository extends JpaRepository<User,Long> {
 

@@ -14,8 +14,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.tweetapp.filters.JwtRequestFilter;
-
+import com.tweetapp.kafka.JwtRequestFilter;
+/**
+ * @author Sinjon Nath
+ *
+ */
 @EnableWebSecurity
 public class Config extends WebSecurityConfigurerAdapter {
 

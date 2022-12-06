@@ -15,7 +15,10 @@ import com.tweetapp.model.Tweet;
 import com.tweetapp.model.User;
 import com.tweetapp.model.utilityModel.TweetWithLikeComment;
 import com.tweetapp.repository.CommentRepository;
-
+/**
+ * @author Sinjon Nath
+ *
+ */
 @Service
 public class CommentService {
     @Autowired

@@ -13,7 +13,10 @@ import com.tweetapp.model.Tweet;
 import com.tweetapp.model.User;
 import com.tweetapp.model.utilityModel.TweetWithLikeComment;
 import com.tweetapp.repository.LikeRepository;
-
+/**
+ * @author Sinjon Nath
+ *
+ */
 @Service
 public class LikeService {
     @Autowired

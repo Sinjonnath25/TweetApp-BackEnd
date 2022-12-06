@@ -6,7 +6,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
-
+/**
+ * @author Sinjon Nath
+ *
+ */
 @Repository
 public interface CommentRepository extends JpaRepository<Comment,Long> {
     List<Comment> findByTweetId(Long tweetId);

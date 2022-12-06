@@ -9,6 +9,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * @author Sinjon Nath
+ *
+ */
 @RestControllerAdvice
 @Slf4j
 public class TweetAppExceptionAdvice {

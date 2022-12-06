@@ -1,4 +1,4 @@
-package com.tweetapp.filters;
+package com.tweetapp.kafka;
 
 import com.tweetapp.service.UserService;
 import com.tweetapp.util.JwtUtil;
@@ -16,7 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
+/**
+ * @author Sinjon Nath
+ *
+ */
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
 	

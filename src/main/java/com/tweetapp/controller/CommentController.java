@@ -12,6 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * @author Sinjon Nath
+ *
+ */
 @RestController
 @RequestMapping("/api/v1.0/tweets")
 @Slf4j

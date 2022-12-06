@@ -17,7 +17,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
-
+/**
+ * @author Sinjon Nath
+ *
+ */
 @Service
 @Slf4j
 public class TweetService {
