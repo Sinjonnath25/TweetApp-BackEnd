@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.tweetapp.exception.TweetAppException;
 import com.tweetapp.model.Comment;
-import com.tweetapp.model.LikeTweet;
+import com.tweetapp.model.Likes;
 import com.tweetapp.model.Tweet;
 import com.tweetapp.model.User;
 import com.tweetapp.model.utilityModel.TweetWithLikeComment;
@@ -50,8 +50,8 @@ public class CommentService {
         
         Tweet tweet = tweetService.getTweetById(tweetId);
         
-        List<LikeTweet> likeList = likeService.getLikedTweetByTweetId(tweetId);
-        List<User> userList = userService.getAllUsersInList(likeList.stream().map(LikeTweet::getUsername).collect(Collectors.toList()));
+        List<Likes> likeList = likeService.getLikedTweetByTweetId(tweetId);
+        List<User> userList = userService.getAllUsersInList(likeList.stream().map(Likes::getUsername).collect(Collectors.toList()));
         
         List<Comment> commentList = getCommentsByTweetId(tweetId);
         return TweetWithLikeComment.builder()

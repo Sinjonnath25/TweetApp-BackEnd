@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.tweetapp.exception.TweetAppException;
 import com.tweetapp.model.Comment;
-import com.tweetapp.model.LikeTweet;
+import com.tweetapp.model.Likes;
 import com.tweetapp.model.Tweet;
 import com.tweetapp.model.User;
 import com.tweetapp.model.utilityModel.TweetWithLikeComment;
@@ -38,12 +38,12 @@ public class LikeService {
         if(tweetService.isTweetIdValid(tweetId)) {
         	throw new TweetAppException("Tweet not found!");
         }
-        likeRepository.save(LikeTweet.builder()
+        likeRepository.save(Likes.builder()
                         .tweetId(tweetId).username(username)
                 .build());
 
-        List<LikeTweet> likeList = getLikedTweetByTweetId(tweetId);
-        List<User> usersList = userService.getAllUsersInList(likeList.stream().map(LikeTweet::getUsername).collect(Collectors.toList()));
+        List<Likes> likeList = getLikedTweetByTweetId(tweetId);
+        List<User> usersList = userService.getAllUsersInList(likeList.stream().map(Likes::getUsername).collect(Collectors.toList()));
 
         List<Comment> commentsList = commentService.getCommentsByTweetId(tweetId);
 
@@ -58,7 +58,7 @@ public class LikeService {
                 .build();
     }
 
-    public List<LikeTweet> getLikedTweetByTweetId(Long tweetId) {
+    public List<Likes> getLikedTweetByTweetId(Long tweetId) {
         return likeRepository.findByTweetId(tweetId);
     }
 }

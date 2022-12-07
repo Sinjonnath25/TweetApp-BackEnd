@@ -2,7 +2,7 @@ package com.tweetapp.service;
 
 import com.tweetapp.exception.TweetAppException;
 import com.tweetapp.model.Comment;
-import com.tweetapp.model.LikeTweet;
+import com.tweetapp.model.Likes;
 import com.tweetapp.model.Tweet;
 import com.tweetapp.model.User;
 import com.tweetapp.model.utilityModel.TweetWithLikeComment;
@@ -40,8 +40,8 @@ public class TweetService {
     	List<TweetWithLikeComment> result = new ArrayList<>();
     	List<Tweet> allTweets = tweetRepository.findAll();
     	for(Tweet tweet:allTweets) {
-    		List<LikeTweet> likes = likeRepository.findByTweetId(tweet.getId());
-    		List<User> userList = userService.getAllUsersInList(likes.stream().map(LikeTweet::getUsername).collect(Collectors.toList()));
+    		List<Likes> likes = likeRepository.findByTweetId(tweet.getId());
+    		List<User> userList = userService.getAllUsersInList(likes.stream().map(Likes::getUsername).collect(Collectors.toList()));
     		List<Comment> comments = commentRepository.findByTweetId(tweet.getId());
     		result.add(TweetWithLikeComment.builder()
     	            .id(tweet.getId())
@@ -70,8 +70,8 @@ public class TweetService {
         List<TweetWithLikeComment> result = new ArrayList<>();
         List<Tweet> allTweets = tweetRepository.findByUsername(username);
         for(Tweet tweet:allTweets) {
-    		List<LikeTweet> likes = likeRepository.findByTweetId(tweet.getId());
-    		List<User> userList = userService.getAllUsersInList(likes.stream().map(LikeTweet::getUsername).collect(Collectors.toList()));
+    		List<Likes> likes = likeRepository.findByTweetId(tweet.getId());
+    		List<User> userList = userService.getAllUsersInList(likes.stream().map(Likes::getUsername).collect(Collectors.toList()));
     		List<Comment> comments = commentRepository.findByTweetId(tweet.getId());
     		result.add(TweetWithLikeComment.builder()
     	            .id(tweet.getId())

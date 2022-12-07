@@ -1,6 +1,6 @@
 package com.tweetapp.repository;
 
-import com.tweetapp.model.LikeTweet;
+import com.tweetapp.model.Likes;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,6 +10,6 @@ import java.util.List;
  *
  */
 @Repository
-public interface LikeRepository extends JpaRepository<LikeTweet, Long> {
-    List<LikeTweet> findByTweetId(Long tweetId);
+public interface LikeRepository extends JpaRepository<Likes, Long> {
+    List<Likes> findByTweetId(Long tweetId);
 }
